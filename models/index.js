@@ -19,6 +19,8 @@ if (config.use_env_variable) {
   );
 }
 
+//added this comment
+
 // adding file system 
 fs.readdirSync(__dirname)
   .filter(function(file) {
