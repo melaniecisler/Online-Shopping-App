@@ -16,10 +16,12 @@ module.exports = function(sequelize, DataTypes) {
     });
     // comparing unhashed password to entered by the user to the hashed password stored in the database 
     User.prototype.validpassword = function(password) {
+        console.log(bcrypt.compareSync(password, this.password));
         return bcrypt.compareSync(password, this.password);
     };
 
     User.addHook("beforeCreate", function(user) {
         user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
     })
+    return User;
 };
