@@ -3,7 +3,7 @@ $(document).ready(function() {
     var nameInput = $("#product-name");
     var priceInput = $("#price");
     var descriptionInput = $("#description");
-    var imageInput = $("#image");
+    
     var productList = $("tbody");
     var productContainer = $(".product-container");
     // Adding event listeners to the form to create a new object, and the button to delete
@@ -27,8 +27,8 @@ $(document).ready(function() {
           .val()
           .trim(),
           price: priceInput.val().trim(),
-          description: descriptionInput.val().trim(),
-          image: imageInput.val().trim()
+          description: descriptionInput.val().trim()
+         
       });
     }
   

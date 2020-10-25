@@ -66,7 +66,8 @@ $(document).ready(function() {
     // This function constructs a post's HTML
     function createNewRow(post) {
       var formattedDate = new Date(post.createdAt);
-      formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
+      formattedDate = moment(formattedDate).format("MMMM Do YYYY");
+      //formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
       var newPostCard = $("<div>");
       newPostCard.addClass("card");
       var newPostCardHeading = $("<div>");
@@ -77,10 +78,11 @@ $(document).ready(function() {
       var editBtn = $("<button>");
       editBtn.text("EDIT");
       editBtn.addClass("edit btn btn-info");
-      var newPostTitle = $("<h2>");
+      var newPostTitle = $("<h3>");
       var newPostDate = $("<small>");
-      var newPostProduct = $("<h5>");
-      newPostProduct.text("Sold by: " + post.Product.name);
+      var newPostProduct = $("<h4>");
+      //var newPostImage = $("<small>");
+      newPostProduct.text("Designed By: " + post.Product.name);
       newPostProduct.css({
         float: "right",
         color: "blue",
@@ -89,9 +91,14 @@ $(document).ready(function() {
       });
       var newPostCardBody = $("<div>");
       newPostCardBody.addClass("card-body");
+      
+      
       var newPostBody = $("<p>");
+      
       newPostTitle.text(post.title + " ");
       newPostBody.text(post.body);
+      
+      //newPostImage.text(post.image);
       newPostDate.text(formattedDate);
       newPostTitle.append(newPostDate);
       newPostCardHeading.append(deleteBtn);
@@ -99,8 +106,10 @@ $(document).ready(function() {
       newPostCardHeading.append(newPostTitle);
       newPostCardHeading.append(newPostProduct);
       newPostCardBody.append(newPostBody);
+      
       newPostCard.append(newPostCardHeading);
       newPostCard.append(newPostCardBody);
+      
       newPostCard.data("post", post);
       return newPostCard;
     }

@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // Getting jQuery references to the post body, title, form, and product select
     var bodyInput = $("#body");
+    
     var titleInput = $("#title");
     var cmsForm = $("#cms");
     var productSelect = $("#product");
@@ -39,9 +40,12 @@ $(document).ready(function() {
         title: titleInput
           .val()
           .trim(),
+
+
         body: bodyInput
           .val()
           .trim(),
+         
         ProductId: productSelect.val()
       };
   
@@ -82,6 +86,8 @@ $(document).ready(function() {
           // If this post exists, prefill our cms forms with its data
           titleInput.val(data.title);
           bodyInput.val(data.body);
+          
+        
           productId = data.ProductId || data.id;
           // If we have a post with this id, set a flag for us to know to update the post
           // when we hit submit
