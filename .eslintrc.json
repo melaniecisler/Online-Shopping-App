@@ -1,16 +1,14 @@
 {
-    "env": {
+  "env": {
     "parser": "babel-eslint",
     "browser": true,
     "commonjs": true,
     "node": true,
     "es6": true
-    },
-    "extends": "prettier",
-    "plugins": [
-    "prettier"
-    ],
-    "rules": {
+  },
+  "extends": "prettier",
+  "plugins": ["prettier"],
+  "rules": {
     "no-duplicate-case": "error",
     "no-empty": "error",
     "no-extra-semi": "error",
@@ -24,22 +22,10 @@
     "no-multi-spaces": "error",
     "no-unused-vars": "error",
     "camelcase": "error",
-    "indent": [
-    "error",
-    2
-    ],
-    "linebreak-style": [
-    "error",
-    "windows"
-    ],
-    "quotes": [
-    "error",
-    "double"
-    ],
-    "semi": [
-    "error",
-    "always"
-    ],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
     "prettier/prettier": "error"
-    }
-    }
+  }
+}
