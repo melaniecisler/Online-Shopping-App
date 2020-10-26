@@ -14,6 +14,7 @@ Github Link: https://github.com/ayshasanyang/Online-Shopping-App
 Heroku Link: https://onlinee-shopping-app.herokuapp.com/
 
 To Run: npm start 
+
         or node server.js
 
 Authored By: Isatoo Sanyang, Nasrah Hassan,  Melanie Cisler, Ryan Tervo, Ryan Ferguson 
