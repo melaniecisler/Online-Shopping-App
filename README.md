@@ -1,5 +1,5 @@
 # Online-Shopping-App
-This is an online shopping app
+This is an Online Shopping App for Product Vendors.
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ayshasanyang/Online-Shopping-App)
 
