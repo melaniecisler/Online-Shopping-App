@@ -3,7 +3,6 @@ $(document).ready(function() {
     var nameInput = $("#product-name");
     var priceInput = $("#price");
     var descriptionInput = $("#description");
-    
     var productList = $("tbody");
     var productContainer = $(".product-container");
     // Adding event listeners to the form to create a new object, and the button to delete
@@ -28,12 +27,12 @@ $(document).ready(function() {
           .trim(),
           price: priceInput.val().trim(),
           description: descriptionInput.val().trim()
-         
       });
     }
   
     // A function for creating an author. Calls getAuthors upon completion
     function upsertProduct(productData) {
+      console.log(productData)
       $.post("/api/products", productData)
         .then(getProducts);
     }

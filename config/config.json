@@ -1,7 +1,7 @@
 {
     "development": {
         "username": "root",
-        "password": "",
+        "password": "TitoBurrito1!",
         "database": "storedb",
         "host": "localhost",
         "dialect": "mysql"
