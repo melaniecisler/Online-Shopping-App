@@ -9,7 +9,7 @@ Technology: JavaScript, MySQL2, Sequelize, Node, Express, Handlebars, Passport, 
 
 Installation: Be sure to use npm install and mysql2. Change the appropriate user and password in config.json file. Load schema.sql into MySQL to get the storedb database.
 
-Github Link: https://github.com/ayshasanyang/Online-Shopping-App
+Github Link: https://github.com/melaniecisler/Online-Shopping-App
 
 Heroku Link: https://onlinee-shopping-app.herokuapp.com/
 
