@@ -19,8 +19,6 @@ To Run: npm start
 
 Authored By: Isatoo Sanyang, Nasrah Hassan,  Melanie Cisler, Ryan Tervo, Ryan Ferguson 
 
-Images: ??demo screen shots ?
-
 Challenges:  Setting up the login/logout Passport functionality. Merging code amongst group members to github. Adding vendor images to the database. Changing from html to handlebars. 
 
 Future development: Perhaps find a way to add in more functionality to the dashboard so the vendors specific changes look more real world. 
