@@ -1,5 +1,6 @@
 # Online-Shopping-App
 This is an online shopping app
+![]homepage.png
 
 ## Table of contents
 - [Description](#description)
