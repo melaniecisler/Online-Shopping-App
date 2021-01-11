@@ -1,8 +1,6 @@
 # Online-Shopping-App
 This is an online shopping app
 
-![OnlineApp](public/img/gif/women.PNG)
-
 ## Table of contents
 - [Description](#description)
 - [Installation](#installation)
